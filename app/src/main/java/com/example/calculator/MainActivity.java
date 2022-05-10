@@ -76,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void clear(View view){
         editText.setText("0");
+        isResult = false;
     }
 
     public void changeSign(View view) {
@@ -92,6 +93,7 @@ public class MainActivity extends AppCompatActivity {
             editText.setText(currentText.substring(0, currentText.length() - 1));
         else
             editText.setText("0");
+            isResult = false;
     }
 
     @SuppressLint("SetTextI18n")
